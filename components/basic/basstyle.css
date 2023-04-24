@@ -13,14 +13,21 @@ nav {
   width: 280px;
   height: 100vh;
   margin-right: 20px;
+  padding: 0 20px;
   padding-top: 20px;
-  padding-left: 20px;
   float: left;
   border-right: 1px solid lightgray;
 }
 
-nav h2 {
+nav .nav-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-wrap h2 {
   margin-bottom: 10px;
+}
+nav .nav-wrap a img {
+  width: 24px;
 }
 
 nav .nav_list {

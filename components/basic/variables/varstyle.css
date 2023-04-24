@@ -9,22 +9,12 @@ a {
   color: black;
 }
 
-header {
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.blank {
-  width: 100vw;
-  height: 30px;
-}
 nav {
   width: 280px;
   height: 100vh;
   margin-right: 20px;
   padding: 0 20px;
+  padding-top: 20px;
   float: left;
   border-right: 1px solid lightgray;
 }
@@ -44,13 +34,13 @@ nav .nav_list {
   list-style: none;
 }
 
-nav .nav_list span {
+nav .nav_list .list-wrap {
   width: 100%;
   padding: 10px 0;
   display: block;
   font-size: 18px;
 }
-nav .nav_list span:hover {
+nav .nav_list .list-wrap:hover {
   color: white;
   cursor: pointer;
   text-decoration: underline;
@@ -72,5 +62,6 @@ nav .nav_list li a:hover {
 .blog-con {
   width: calc(100vw - 300px);
   height: 100vh;
+  padding-top: 20px;
   float: left;
 }

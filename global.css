@@ -44,24 +44,23 @@ nav .nav_list {
   list-style: none;
 }
 
-nav .nav_list span {
+nav .nav_list a {
   width: 100%;
   padding: 10px 0;
   display: block;
   font-size: 18px;
 }
-nav .nav_list span:hover {
+nav .nav_list a:hover {
   color: white;
   cursor: pointer;
   text-decoration: underline;
   background: rgb(255, 196, 196);
 }
-nav .nav_list a {
-  width: 100%;
-  padding: 10px;
-  display: block;
-  font-size: 18px;
+
+nav .nav_list li{
+  margin-left: 10px;
 }
+
 nav .nav_list li a:hover {
   color: white;
   cursor: pointer;

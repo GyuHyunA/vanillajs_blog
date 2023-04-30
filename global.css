@@ -6,27 +6,48 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 20px;
+  background-color: #6b6b6b;
+  color: white;
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(65, 65, 65);
+  border-radius: 20px;
 }
+header h1 {
+  color: white;
+}
+
 .blank {
-  width: 100vw;
+  width: 100%;
   height: 30px;
 }
+
+.contain-align {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
 nav {
   width: 280px;
   height: 100vh;
   margin-right: 20px;
-  padding: 0 20px;
-  float: left;
-  border-right: 1px solid lightgray;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 65);
 }
 
 nav .nav-wrap {
@@ -35,6 +56,7 @@ nav .nav-wrap {
 }
 nav .nav-wrap h2 {
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 nav .nav-wrap a img {
   width: 24px;
@@ -46,7 +68,7 @@ nav .nav_list {
 
 nav .nav_list a {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   display: block;
   font-size: 18px;
 }
@@ -54,22 +76,18 @@ nav .nav_list a:hover {
   color: white;
   cursor: pointer;
   text-decoration: underline;
+  border-radius: 10px;
   background: rgb(255, 196, 196);
 }
 
-nav .nav_list li{
+nav .nav_list li {
   margin-left: 10px;
-}
-
-nav .nav_list li a:hover {
-  color: white;
-  cursor: pointer;
-  text-decoration: underline;
-  background: rgb(255, 196, 196);
 }
 
 .blog-con {
   width: calc(100vw - 300px);
   height: 100vh;
-  float: left;
+  background: rgb(65, 65, 65);
+  padding: 20px;
+  border-radius: 20px;
 }

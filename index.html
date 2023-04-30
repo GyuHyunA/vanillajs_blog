@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
+    <script src="https://kit.fontawesome.com/3812ee1550.js" crossorigin="anonymous"></script>
     <title>Vanilla JS 블로그</title>
   </head>
   <body>
@@ -12,18 +13,22 @@
       <h1>Vanilla JS 정리</h1>
     </header>
     <div class="blank"></div>
-    <nav class="nav-con">
-      <div class="nav-wrap">
-        <h2>목차</h2>
-        <a href="/"><img src="/asset/icons/home.png" alt="" /></a>
-      </div>
-      <ul class="nav_list">
-        <a href="./components/basic/basiclist.html">[1] 바닐라 JS 기본</a>
-        <li class="nav-cont"><a href="./components/basic/variables/variables.html">1. 변수</a></li>
-      </ul>
-    </nav>
-    <section class="blog-con">
-      <h2>Bloging</h2>
-    </section>
+    <div class="contain-align">
+      <nav class="nav-con">
+        <div class="nav-wrap">
+          <h2>목차</h2>
+          <a href="/"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <ul class="nav_list"></ul>
+      </nav>
+      <section class="blog-con">
+        <div class="contents-con">
+          <div class="contents-wrap">
+            <a href="" class="log"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script async src="./js/mainnav.js"></script>
   </body>
 </html>

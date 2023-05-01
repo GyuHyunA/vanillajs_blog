@@ -1,6 +1,6 @@
 // 목차 생성
 const mainShortCut = "./components/basic/";
-const subShortCut = "../../../components/basic/"
+const subShortCut = "../../../components/basic/";
 const navList = [
   {
     id: 0,
@@ -11,7 +11,7 @@ const navList = [
         id: 0,
         title: "변수",
         link: mainShortCut + "variables/variables.html",
-      }, 
+      },
     ],
   },
 ];
@@ -37,3 +37,31 @@ navList.forEach((v) => {
     nav.appendChild(mli);
   });
 });
+
+const contentsList = [
+  {
+    id: 0,
+    title: "제목",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum quis unde voluptas earum nulla repudiandae velit consectetur quos distinctio cumque, aspernatur asperiores quae exercitationem quidem minus eum adipisci aut?",
+  },
+];
+
+let conWrap = document.querySelector(".contents-con");
+let cona = document.createElement("a");
+let conh = document.createElement("h2");
+let cont = document.createElement("p");
+
+cona.classList.add("con-box");
+conh.classList.add("con-head");
+cont.classList.add("con-text");
+
+contentsList.forEach((v, i) => {
+  cona.href = `lsit${v.id}`;
+  conh.textContent = v.title + v.id;
+  cont.textContent = v.text;
+  cona.appendChild(conh);
+  cona.appendChild(cont);
+});
+conWrap.appendChild(cona);
+
+console.log(conWrap);
